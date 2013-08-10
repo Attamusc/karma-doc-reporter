@@ -1,15 +1,15 @@
-# karma-spec-reporter
+# karma-doc-reporter
 
-> Spec reporter for karma.
+> Doc reporter for karma.
 
 ## Installation
 
-The easiest way is to keep `karma-spec-reporter` as a devDependency in your `package.json`.
+The easiest way is to keep `karma-doc-reporter` as a devDependency in your `package.json`.
 ```json
 {
   "devDependencies": {
     "karma": "~0.10",
-    "karma-spec-reporter": "git://github.com/Attamusc/karma-spec-reporter#master"
+    "karma-doc-reporter": "git://github.com/Attamusc/karma-doc-reporter#master"
   }
 }
 ```
@@ -19,14 +19,14 @@ The easiest way is to keep `karma-spec-reporter` as a devDependency in your `pac
 // karma.conf.js
 module.exports = function(config) {
   config.set({
-    reporters: ['progress', 'junit'],
+    reporters: ['doc', 'progress'],
   });
 };
 ```
 
 You can pass list of reporters as a CLI argument too:
 ```bash
-karma start --reporters spec,dots
+karma start --reporters doc,dots
 ```
 
 ----
