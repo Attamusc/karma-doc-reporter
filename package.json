@@ -1,0 +1,23 @@
+{
+  "name": "karma-spec-reporter",
+  "version": "0.0.1",
+  "description": "Spec reporter for karma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Attamusc/karma-spec-reporter.git"
+  },
+  "keywords": [
+    "spec",
+    "karma-plugin",
+    "karma-reporter"
+  ],
+  "author": "Sean Dunn <sean@attamusc.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Attamusc/karma-spec-reporter/issues"
+  }
+}
