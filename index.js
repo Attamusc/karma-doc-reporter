@@ -10,7 +10,7 @@ var ANSI = {
 };
 
 var DocReporter = function(baseReporterDecorator, config, emitter, logger, helper, formatError) {
-  var karmaLog = logger.create('reporter.spec');
+  var karmaLog = logger.create('reporter.doc');
 
   this.started = false;
   this.finished = false;
@@ -38,9 +38,6 @@ var DocReporter = function(baseReporterDecorator, config, emitter, logger, helpe
     if (result.skipped) {
       return;
     }
-
-    //this.passed_asserts += result.passedCount;
-    //this.executed_asserts += result.totalCount;
 
     if (result.success) {
       this.passed_specs++;
@@ -87,5 +84,5 @@ DocReporter.$inject = ['baseReporterDecorator', 'config.junitReporter', 'emitter
     'helper', 'formatError'];
 
 module.exports = {
-  'reporter:spec': ['type', DocReporter]
+  'reporter:doc': ['type', DocReporter]
 };
